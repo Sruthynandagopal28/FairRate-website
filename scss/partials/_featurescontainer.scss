@@ -1,0 +1,100 @@
+.features_container{
+    background: url("../images/group-2.png") no-repeat ;
+    background-size: cover;
+    height: 604px;   
+    position: relative;
+    padding: 60px 0 88px;
+    color: #fff;
+    h2{
+        font-size: 32px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .container_div{
+        margin-top: 85px;
+        margin-left: 50%;
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.64;
+            max-width: 420px;
+            margin-top: 20px;
+        }
+        ul{
+            margin: 20px 0  30px;
+            li{
+                list-style-type: none;
+                margin-bottom: 20px;
+                font-size: 14px;
+                &::before{
+                    content:"\f00c";
+                    font-weight: 600;
+                    font-family:'Font Awesome 5 Free';
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                    padding: 4px;
+                    margin-right: 11px;
+                }  
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+           
+        }
+        button{
+            color: $primary_clr;
+            background-color: #fff;
+            border: 1px solid #fff;
+            &:hover{
+                color: #fff;
+                background-color: $primary_clr;
+                border: 1px solid $primary_clr;
+            }
+        }
+    }
+    @media screen and (max-width: 1100px){
+        background-color: #24a8bf;
+        background-image: none;
+        .container_div{
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            p{
+                margin: 0 auto;
+                padding-top: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .container_div{
+            margin-top: 50px;
+            max-width: 300px;
+        }
+    }
+    @media screen and (max-width: 630px) {
+        .container_div{
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        h2{
+            font-size: 25px;
+        }
+        .container_div{
+            h3{
+                font-size: 20px;
+            }
+        }
+
+    }
+    
+    
+}

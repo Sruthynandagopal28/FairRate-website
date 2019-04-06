@@ -1,0 +1,32 @@
+.customer_helpline{
+    position: relative;
+    background-color:#fff;
+    text-align: center;
+    padding: 90px 0 87px;
+    h3{
+        font-size: 24px;
+        color: #454f5b;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    p{
+        color: #454f5b;
+        margin-top: 10px;
+        padding: 0 200px;
+        margin-bottom: 14px;
+    }
+    a{
+        text-decoration: none;
+        color: #007ace;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 880px){
+        p{
+            padding: 0;
+            
+        }
+    }  
+    @media screen and (max-width: 320px){
+        padding: 50px 0 50px;
+    }
+} 

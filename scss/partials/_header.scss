@@ -1,0 +1,152 @@
+header{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .wrapper{
+        border-bottom: 1px solid #c4cdd5;
+        padding:27px 0 19px;
+        font-size: 0;
+        &::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .logo{
+            display: inline-block;
+            cursor: pointer;
+        }
+        img{
+            vertical-align: middle;
+        }
+        .telephone_number{
+            text-decoration: none;
+            color: #454f5b;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 45px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 4px;
+        }
+        .menu_bar{
+            margin-left: 8px;
+            display: none;
+            font-size: 16px;
+            color: rgba(0,0,0,0.5);
+            cursor: pointer;
+        }
+        nav{
+            float: right;
+            a{
+                color: #69939d;
+                margin-left: 0;
+                margin-right: 26px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 600;
+                transition: color 0.5s linear;
+                &:hover{
+                    color: #000;
+                }
+            }
+            button{
+                background-color: $btn-clr;
+                padding: 8px 19px;
+                outline:none;
+                color: #fff;
+                border: 1px solid #23c0f5;
+                margin-top: 6px;
+                border-radius: 2px;
+                cursor: pointer;
+                font-size: 13px;
+                transition: all 0.5s linear;
+                &:hover{
+                    color: $btn-clr;
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 885px){
+        &.nav_open{
+            height: 100vh;
+            background-color: #f4f6f8;
+            z-index: 2;
+            .wrapper{
+                .menu_bar{
+                    &::before{
+                        content:"\f00d";
+                    }
+                }
+                nav{
+                    display: block;
+                    position: absolute;
+                    float: none;
+                    top: 87px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    a{
+                        display: block;
+                        margin-top: 20px;
+                        margin-right: 0;
+                        text-align: center;
+                    }
+                    button{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .wrapper{
+            &:after{
+                content: "";
+                clear: both;
+                display: block;
+            }
+            .menu_bar{
+                float: right;
+                display: block;
+                margin-right: 20px;
+                margin-top: 12px;
+               
+            }
+            nav{
+                display: none;
+            }
+
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .wrapper{
+            .telephone_number{
+                display: none;
+            }
+        }  
+    }
+    @media screen and (max-width: 320px){
+        .wrapper{
+            img{
+                width: 150px;
+            }
+            nav{
+                span{
+                    margin-top: 8px;
+                }
+            }
+           
+        }
+    
+    }
+}
+.bg-change{
+    background-color: #f4f6f8;
+    z-index:2;
+    box-shadow: 0 2px 4px 0 rgba(244, 246, 248, 0.5);
+    .wrapper{
+        border-bottom: none;
+    }
+}
